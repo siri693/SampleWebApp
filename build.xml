@@ -28,10 +28,9 @@
                 <pathelement path="WebContent/WEB-INF/lib/junit.jar"/>
                 <pathelement path="WebContent/WEB-INF/lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
               </classpath>
-              <test name="junit.TestCalculator" haltonfailure="no" outfile="TestCalculator_JUnitResult">
                 <formatter type="xml"/>
-              </test>
-        </junit>
+              <test name="junit.TestCalculator" haltonfailure="no" outfile="TestCalculator_JUnitResult"/>
+          </junit>
     </target>
 	<target name="war" depends="compile">
         <war destfile="dest/SampleWebApp.war" webxml="WebContent/WEB-INF/web.xml">
